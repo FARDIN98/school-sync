@@ -1,10 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import login from "../../assets/images/log.png";
 
 function Login() {
   return (
     <div>
-      <div className="absolute top-0 left-0 w-[65vw] h-screen bg-whitesmoke-200 shadow-lg">
+      <div className="fixed top-0 left-0 w-[65vw] h-screen bg-whitesmoke-200 shadow-lg justify-center items-center pb-0">
+        <div>
+        <img
+  src={login}
+  alt=""
+  className="w-[45vw] ml-32 my-20"
+/>
+
+          
+        </div>
+      
+
       </div>
 
       <div className="absolute top-0 right-0 w-[35vw] h-screen bg-white">
@@ -19,11 +31,28 @@ function Login() {
                 <label htmlFor="input2" className="text-gray-800 pb-1 text-sm">Password</label>
                 <input type="text" placeholder="Enter your password" className="border-none outline-none rounded-md p-2 mb-2 bg-whitesmoke-200 w-[429.1px] h-[30px] pt-3" />
               </div>
+              <div className="flex">
+              <input
+                    className="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                    type="checkbox"
+                    value=""
+                    id="exampleCheck3"
+                    defaultChecked
+                  />
+                  <label
+                    className="inline-block pl-[0.15rem] font-poppins"
+                    htmlFor="exampleCheck3"
+                  >
+                    Remember me
+                  </label>
               <div className="items-end">
                 <a href="#" className="absolute top-[405px] left-[365px] text-mini-1 [text-decoration:underline] text-midnightblue">
                   Forgot password?
                 </a>
               </div>
+
+              </div>
+              
               <div>
                 <button
                   type="button"

@@ -1,4 +1,5 @@
 import React from 'react';
+import signup from "../../assets/images/signup.png";
 
 const InputField = ({ type, placeholder, className }) => {
   return (
@@ -40,7 +41,17 @@ const Signup = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-0 right-0 bg-whitesmoke-200 w-full md:w-1/2 h-screen"></div>
+      <div className="absolute top-0 right-0 bg-whitesmoke-200 w-full md:w-1/2 h-screen">
+      <div>
+        <img
+  src={signup}
+  alt=""
+  className="w-[40vw] ml-20 my-36"
+/>
+
+          
+        </div>
+      </div>
     </div>
   );
 };
