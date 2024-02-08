@@ -2,7 +2,7 @@ import { BrowserRouter , Route, Routes } from 'react-router-dom'; // Import Rout
 import './App.css';
 import Signup from './components/Signup/Signup';
 import Login from './components/Login/Login';
-
+import LandingPage from './components/LandingPage/LandingPage';
 function App() {
   
 
@@ -11,6 +11,7 @@ function App() {
      <Routes>
      <Route path="/" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<LandingPage />} />
      </Routes>
      
      
