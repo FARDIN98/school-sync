@@ -7,6 +7,7 @@ import student from "../../assets/images/student.png";
 import parents from "../../assets/images/parents.png";
 import teacher from "../../assets/images/teacher.png";
 import admin from "../../assets/images/admin.png";
+import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import Footer from "./Footer/Footer";
 const LandingPage = () => {
@@ -30,9 +31,12 @@ const LandingPage = () => {
                 </span>
               </a>
             </div>
-            <button className="text-lg bg-blue-600 text-white px-5 py-2 rounded-md">
+            <Link to="/login">
+            <button className="text-lg bg-blue-600 text-white px-5 py-2 rounded-md cursor-pointer">
               Login
             </button>
+            </Link>
+            
           </nav>
         </header>
       </section>
