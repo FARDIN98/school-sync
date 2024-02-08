@@ -1,13 +1,14 @@
 import logo from "../../assets/images/logo.png";
 import overview from "../../assets/images/overview.png";
 import quiz from "../../assets/images/Quiz_Generate.png";
-import learing from "../../assets/images/Learning_suggestion.png";
+import learning from "../../assets/images/Learning_suggestion.png";
 import chatbot from "../../assets/images/AI_chatbot.png";
 import student from "../../assets/images/student.png";
 import parents from "../../assets/images/parents.png";
 import teacher from "../../assets/images/teacher.png";
 import admin from "../../assets/images/admin.png";
 import { motion } from "framer-motion";
+import Footer from "./Footer/Footer";
 const LandingPage = () => {
   return (
     <>
@@ -24,7 +25,7 @@ const LandingPage = () => {
                   alt=""
                   className="w-10 inline-block items-center"
                 />{" "}
-                <span className="text-red no-underline">
+                <span className="text-red no-underline text-3xl">
                   S<span className="text-[#263238]">chool-Sync</span>
                 </span>
               </a>
@@ -35,16 +36,18 @@ const LandingPage = () => {
           </nav>
         </header>
       </section>
-      <section className="bg-[#bae8e8]">
+      <section className="bg-[#D4E7C5]" > 
+      <div className="col-span-4 text-center text-7xl text-bold italic py-4">
+          Overview
+        </div>
         <div className="grid grid-cols-2 max-w-[90rem] mx-auto py-10 gap-32">
           <motion.div
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 50, opacity: 1 }}
             transition={{ duration: 2, x: { duration: 1 } }}
-            className="flex items-center justify-center text-4xl text-center text-gray-600"
+            className="flex items-center justify-center text-4xl text-center text-gray-600 text-bold italic text-left"
           >
-            A holistic approach to enhance the learning experience by
-            Cultivating Collaborative Pedagogy and Comprehensive Evaluation
+            A holistic approach to enhance the learning experience by Cultivating Collaborative Pedagogy and Comprehensive Evaluation
             Framework
           </motion.div>
           <motion.div
@@ -62,11 +65,11 @@ const LandingPage = () => {
         transition={{ duration: 1, x: { duration: 1 } }}
         className="grid grid-cols-4 max-w-7xl mx-auto py-10 gap-10 text-center text-xl"
       >
-        <div className="col-span-4 text-center text-7xl">
-          Targetted Audience
+        <div className="col-span-4 text-center text-7xl text-bold italic">
+          Our Audience
         </div>
         <div className="shadow-xl rounded px-5 py-2 flex flex-col justify-between items-center">
-          <div>Focus Learing Goal</div>
+          <div>Focus Learning Goal</div>
           <img src={student} alt="student" width={200} />
           <div className="text-center font-bold italic text-xl">Student</div>
         </div>
@@ -88,7 +91,7 @@ const LandingPage = () => {
       </motion.section>
       <section className="bg-slate-200">
         <div className="grid grid-cols-2 max-w-[90rem] mx-auto py-10 gap-x-32 gap-y-10">
-          <div className="col-span-2 text-center text-7xl">
+          <div className="col-span-2 text-center text-7xl text-bold italic">
             Automatic Quiz Generator
           </div>
           <motion.div
@@ -102,17 +105,15 @@ const LandingPage = () => {
             animate={{ x: -50, opacity: 1 }}
             initial={{ x: 50, opacity: 0 }}
             transition={{ duration: 2, x: { duration: 1 } }}
-            className="flex items-center justify-center text-4xl text-center text-gray-600"
+            className="flex items-center justify-center text-4xl text-center text-gray-600 text-bold italic"
           >
-            A holistic approach to enhance the learning experience by
-            Cultivating Collaborative Pedagogy and Comprehensive Evaluation
-            Framework
+            Utilize machine learning algorithms to generate personalized quiz questions based on individual learning patterns and knowledge gaps.
           </motion.div>
         </div>
       </section>
       <section className="bg-[#bae8e8]">
         <div className="grid grid-cols-2 max-w-[90rem] mx-auto py-10 gap-x-32 gap-y-10">
-          <div className="col-span-2 text-center text-7xl">
+          <div className="col-span-2 text-center text-7xl text-bold italic">
             Adaptive Learning Suggestion
           </div>
 
@@ -120,18 +121,16 @@ const LandingPage = () => {
             animate={{ x: -50, opacity: 1 }}
             initial={{ x: 50, opacity: 0 }}
             transition={{ duration: 2, x: { duration: 1 } }}
-            className="flex items-center justify-center text-4xl text-center text-gray-600"
+            className="flex items-center justify-center text-4xl text-center text-gray-600 text-bold italic"
           >
-            A holistic approach to enhance the learning experience by
-            Cultivating Collaborative Pedagogy and Comprehensive Evaluation
-            Framework
+            Utilize real-time data insights to recommend customized learning paths, adjusting content difficulty and pacing to optimize individual progress and engagement.
           </motion.div>
           <motion.div
             animate={{ x: -50, opacity: 1 }}
             initial={{ x: 50, opacity: 0 }}
             transition={{ duration: 2, x: { duration: 1 } }}
           >
-            <img src={learing} alt="" />
+            <img src={learning} alt="" />
           </motion.div>
         </div>
       </section>
@@ -149,14 +148,13 @@ const LandingPage = () => {
             animate={{ x: -50, opacity: 1 }}
             initial={{ x: 50, opacity: 0 }}
             transition={{ duration: 2, x: { duration: 1 } }}
-            className="flex items-center justify-center text-4xl text-center text-gray-600"
+            className="flex items-center justify-center text-4xl text-center text-gray-600 text-bold italic"
           >
-            A holistic approach to enhance the learning experience by
-            Cultivating Collaborative Pedagogy and Comprehensive Evaluation
-            Framework
+            AI chatbot interact with students question and provide instant answer to enhance students learning effeciency. 
           </motion.div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };
