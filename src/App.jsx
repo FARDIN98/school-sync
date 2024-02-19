@@ -4,6 +4,7 @@ import './App.css';
 import Signup from './components/Signup/Signup';
 import Login from './components/Login/Login';
 import LandingPage from './components/LandingPage/LandingPage';
+import Sidenav from './components/SideNav/Sidenav';
 function App() {
   
 
@@ -13,6 +14,7 @@ function App() {
      <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/sidenav" element={<Sidenav />} />
      </Routes>
      
      
