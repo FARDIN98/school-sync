@@ -5,6 +5,7 @@ import Signup from './components/Signup/Signup';
 import Login from './components/Login/Login';
 import LandingPage from './components/LandingPage/LandingPage';
 import Sidenav from './components/SideNav/Sidenav';
+import Forgot from './components/ForgotPass/Forgot';
 function App() {
   
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/sidenav" element={<Sidenav />} />
+        <Route path="/Forgot" element={<Forgot />} />
      </Routes>
      
      

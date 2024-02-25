@@ -42,9 +42,12 @@ function Login() {
                   Remember me
                 </label>
                 <div className="items-end">
+                  <Link to="/Forgot">
                   <a href="#" className="ml-auto text-mini-1 [text-decoration:underline] text-midnightblue pl-40">
                     Forgot password?
                   </a>
+                  </Link>
+                  
                 </div>
               </div>
               
