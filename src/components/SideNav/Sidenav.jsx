@@ -6,12 +6,15 @@ import { LuShieldQuestion } from "react-icons/lu";
 
 export default function Sidenav() {
   return (
-    <aside className='h-screen'>
-      <nav className='h-full flex flex-col bg-white border-r shadow-sm'>
-        <div className='p-4 pb-2 flex justify-between items-center'>
-          <img src={logo} className='w-32' alt="" />
+    <aside className='h-screen overflow-x-hidden border-r shadow-sm'>
+      <nav className='h-full flex flex-col bg-white w-[20vw]'>
+        <div className='p-3 pb-2 flex'>
+          <img src={logo} className='w-24' alt="" />
+          <span className="text-red no-underline text-3xl pl-4 font-bold">
+                  S<span className="text-[#263238]">chool <br />Sync</span>
+                </span>
         </div>
-        <div className="flex flex-col flex-grow p-4 w-screen">
+        <div className="flex flex-col flex-grow p-4 w-[17vw]">
         <div className="mb-4">
         <a href="#" className="flex items-center py-2 px-2 rounded-lg text-blue-800  bg-gradient-to-b from white to white hover:from-blue-500 hover:to-white-300 no-underline font-medium">
             <HiOutlineViewGrid className="mr-2 w-7 h-7" /> Dashboard
