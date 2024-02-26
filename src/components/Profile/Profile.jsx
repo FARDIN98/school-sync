@@ -1,9 +1,10 @@
-import React from 'react';
+
+import Sidenav from './../SideNav/Sidenav';
 
 function Profile() {
   return (
     <div>
-        
+        <Sidenav />
     </div>
   );
 }
