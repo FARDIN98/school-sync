@@ -7,6 +7,7 @@ import LandingPage from './components/LandingPage/LandingPage';
 import Forgot from './components/ForgotPass/Forgot';
 import ProfilePage from './components/Profile/Profile';
 import Sidenav from './components/SideNav/Sidenav';
+import Uppernav from './components/UpperNav/Uppernav';
 function App() {
   
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Forgot" element={<Forgot />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/sidenav" element={<Sidenav />} />
+        <Route path="/uppernav" element={<Uppernav />} />
      </Routes>
      
      
