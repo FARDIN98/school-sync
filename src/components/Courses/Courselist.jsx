@@ -7,6 +7,8 @@ import Physics from "../../assets/images/phy.png";
 import ICT from "../../assets/images/ICT.png";
 import English from "../../assets/images/Eng.png";
 import ss from "../../assets/images/ss.png";
+import fac from "../../assets/images/ICT_fac.png";
+
 const imageUrls = [
   Math,
   Chemistry,
@@ -41,9 +43,16 @@ function Courselist() {
               </div>
               <div className="grid grid-cols-3 gap-6 justify-center pl-7 mt-10">
   {[...Array(6)].map((_, index) => (
-    <div key={index} className=" w-80 bg-white rounded-lg shadow-lg overflow-hidden">
+    <div key={index} className="w-80 bg-white rounded-lg shadow-lg overflow-hidden">
       <div className="h-36 bg-gray-300 relative rounded-bl-30p rounded-br-30p">
         <img src={imageUrls[index]} alt="Card Image" className="h-full w-full object-cover rounded-t-lg rounded-bl-lg rounded-br-lg" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-16 ml-28">
+          <img
+            src={fac}
+            alt="Circular Image"
+            className="rounded-full w-13 h-13"
+          />
+        </div>
       </div>
       <div className="p-3">
         <h2 className="text-xl font-bold mb-2 top-4">
@@ -62,7 +71,7 @@ function Courselist() {
           </div>
         </div>
       </div>
-      <Footer className=' pt-10' />
+      <Footer className='pt-10' />
     </div>
   );
 }
