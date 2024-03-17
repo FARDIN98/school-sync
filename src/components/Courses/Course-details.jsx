@@ -1,11 +1,13 @@
 import Sidenav from './../SideNav/Sidenav';
 import banner from "../../assets/images/banner.jpg";
 import banner2 from "../../assets/images/banner2.png";
+import Service from '../LandingPage/Footer/Service';
+import Footer from '../LandingPage/Footer/Footer';
 
 function CourseDetails() {
   return (
-    <div className='bg-opacity-100 bg-gray-200 h-screen'>
-      <div className='flex'>
+    <div className='bg-opacity-100 bg-gray-200 min-h-screen flex flex-col'>
+      <div className='flex flex-1'>
         <div className='flex h-screen'>
           <Sidenav />
         </div>
@@ -27,36 +29,36 @@ function CourseDetails() {
             </div>
           </div>
 
-          <div className="bg-white h-full w-50vw rounded-xl ml-6 mr-6 mt-[-4] flex">
-            <div className="flex-1 pl-12">
-              <img
-                className="w-4/5 h-4/5 mx-auto pt-10 rounded-lg"
-                src={banner2}
-                alt=""
-              />
-            </div>
-            <div className="flex-1 flex flex-col items-start right-12 mt-32">
-              <h2 className="text-2xl font-bold mb-2">About Course</h2>
-              <p className=" text-start text-slate-600">
-                In this comprehensive React Course, you'll delve into the world of React,
-                from its fundamentals to advanced techniques. Our expert instructors will
-                guide you through every step.
-              </p>
-              <br />
-              <h2 className="text-2xl font-bold mb-2">Course Objectives</h2>
-              <div className="max-w-md mx-auto">
-      <ul className="list-disc text-green-700">
-        <li className="mb-2">Easy to learn</li>
-        <li className="mb-2">Fast rendering with virtual DOM</li>
-        <li className="mb-2">Component-based architecture</li>
-        <li className="mb-2">Large ecosystem and community support</li>
-        <li className="mb-2">Responsive design capabilities</li>
-      </ul>
-    </div>
+          <div className="bg-white h-full w-50vw rounded-xl ml-6 mr-6 mt-[-4] flex flex-col items-center justify-center">
+            <div className='flex flex-col'>
+              <div className="pl-12 pr-12 mt-8">
+                <h2 className="text-2xl font-bold mb-2">About Course</h2>
+                <p className="text-slate-600">
+                  In this comprehensive React Course, you'll delve into the world of React,
+                  from its fundamentals to advanced techniques. Our expert instructors will
+                  guide you through every step.
+                </p>
+              </div>
+              <div className="pl-12 pr-12 mt-8">
+                <h2 className="text-2xl font-bold mb-2">Course Objectives</h2>
+                <div className="max-w-md mx-auto">
+                  <ul className="list-disc text-green-700">
+                    <li className="mb-2">Easy to learn</li>
+                    <li className="mb-2">Fast rendering with virtual DOM</li>
+                    <li className="mb-2">Component-based architecture</li>
+                    <li className="mb-2">Large ecosystem and community support</li>
+                    <li className="mb-2">Responsive design capabilities</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="mt-16">
+                <Service />
+              </div>
             </div>
           </div>
         </div>
       </div>
+      
     </div>
   );
 }
