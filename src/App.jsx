@@ -9,6 +9,7 @@ import ProfilePage from './components/Profile/Profile';
 import Sidenav from './components/SideNav/Sidenav';
 import Uppernav from './components/UpperNav/Uppernav';
 import Courselist from './components/Courses/Courselist';
+import CourseDet from './components/Courses/Course-details';
 function App() {
   
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/sidenav" element={<Sidenav />} />
         <Route path="/uppernav" element={<Uppernav />} />
         <Route path="/courses" element={<Courselist />} />
+        <Route path="/courses-details" element={<CourseDet />} />
      </Routes>
      
      

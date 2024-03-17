@@ -4,8 +4,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
     "./node_modules/flowbite/**/*.js"
-], 
-
+  ],
   theme: {
     extend: {
       colors: {
@@ -49,6 +48,17 @@ module.exports = {
         "mini-1": "14.1px",
         inherit: "inherit",
       },
+      // Add vignette utility classes
+      vignette: {
+        relative: 'relative',
+        '&::before': {
+          content: '""',
+          position: 'absolute',
+          inset: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.8)',
+          boxShadow: 'inset 0 0 100px rgba(0, 0, 0, 0.8)',
+        },
+      },
     },
   },
   corePlugins: {
@@ -57,5 +67,5 @@ module.exports = {
   plugins: [
     // eslint-disable-next-line no-undef
     require('flowbite/plugin')
-],
+  ],
 };
