@@ -26,7 +26,6 @@ function App() {
         <Route path="/uppernav" element={<Uppernav />} />
         <Route path="/courses" element={<Courselist />} />
         <Route path="/courses-details" element={<CourseDet />} />
-        <Route path="/adaptiveLearning" element={<AdaptiveLearning />} />
      </Routes>
      
      
