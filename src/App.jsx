@@ -10,6 +10,7 @@ import Sidenav from './components/SideNav/Sidenav';
 import Uppernav from './components/UpperNav/Uppernav';
 import Courselist from './components/Courses/Courselist';
 import CourseDet from './components/Courses/Course-details';
+import AdaptiveLearning from './components/AdaptiveLearning/AdaptiveLearning';
 function App() {
   
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/uppernav" element={<Uppernav />} />
         <Route path="/courses" element={<Courselist />} />
         <Route path="/courses-details" element={<CourseDet />} />
+        <Route path="/adaptiveLearning" element={<AdaptiveLearning />} />
      </Routes>
      
      
